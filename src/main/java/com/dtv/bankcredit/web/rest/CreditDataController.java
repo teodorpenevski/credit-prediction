@@ -47,7 +47,11 @@ public class CreditDataController {
                                    @RequestParam Integer isForeignWorker, Model model){
         CreditData creditData = new CreditData(status, duration, creditHistory, purpose, amount, savingsAccount, presentEmploymentSince, installmentRate, personalStatusAndSex,
                 otherDebtorsAndGuarantors, presentResidenceSince, property, age, otherInstallmentPlans, housing, numberOfExistingCredits, job, numberOfPeopleLiableForMaintenance,
+<<<<<<< HEAD
                 telephone, isForeignWorker);
+=======
+                telephone, isForeignWorker==1);
+>>>>>>> origin/master
         CreditPrediction creditPrediction = creditService.predictForCreditData(creditData);
         model.addAttribute("prediction", creditPrediction);
         return "result";

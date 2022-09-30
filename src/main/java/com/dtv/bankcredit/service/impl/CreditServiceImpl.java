@@ -28,7 +28,11 @@ public class CreditServiceImpl implements CreditService {
                 "Housing", data.getHousing(), "NumberOfExistingCredits", data.getNumberOfExistingCredits(),
                 "Job", data.getJob(), "NumberOfPeopleLiableForMaintenance", data.getNumberOfPeopleLiableForMaintenance(),
                 "Telephone", data.getTelephone(), "IsForeignWorker", data.getIsForeignWorker());
+<<<<<<< HEAD
         CreditPrediction prediction = restTemplate.postForEntity(RequestHelper.relativeUrl+"/predict", request, CreditPrediction.class).getBody();
+=======
+        CreditPrediction prediction = restTemplate.postForEntity(RequestHelper.relativeUrl+"/web", request, CreditPrediction.class).getBody();
+>>>>>>> origin/master
         return prediction;
     }
 }

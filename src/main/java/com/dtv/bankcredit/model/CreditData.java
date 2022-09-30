@@ -24,7 +24,11 @@ public class CreditData {
     Integer job;
     Integer numberOfPeopleLiableForMaintenance;
     Integer telephone;
+<<<<<<< HEAD
     Integer isForeignWorker;
+=======
+    Boolean isForeignWorker;
+>>>>>>> origin/master
 
     public CreditData() {
     }
@@ -36,7 +40,11 @@ public class CreditData {
                       Integer presentResidenceSince, Integer property, Integer age,
                       Integer otherInstallmentPlans, Integer housing, Integer numberOfExistingCredits,
                       Integer job, Integer numberOfPeopleLiableForMaintenance, Integer telephone,
+<<<<<<< HEAD
                       Integer isForeignWorker) {
+=======
+                      Boolean isForeignWorker) {
+>>>>>>> origin/master
         this.status = status;
         this.duration = duration;
         this.creditHistory = creditHistory;
