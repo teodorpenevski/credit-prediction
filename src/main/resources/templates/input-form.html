@@ -1,0 +1,123 @@
+<head>
+  <meta charset="UTF-8"/>
+  <title>Products</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container" xmlns:th="http://www.thymeleaf.org">
+    <form class="form-signin mt-xl-5" method="post" action="/prediction/predictForData">
+      <div class="container">
+        <h1 class="jumbotron-heading">Prediction</h1>
+        <h3 class="jumbotron-heading">Enter your data</h3>
+      </div>
+      <p>
+        <label for="status" class="sr-only">Status</label>
+        <input type="text" id="status" name="status" class="form-control" placeholder="status" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="duration" class="sr-only">Duration</label>
+        <input type="text" id="duration" name="duration" class="form-control" placeholder="duration" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="creditHistory" class="sr-only">CreditHistory</label>
+        <input type="text" id="creditHistory" name="creditHistory" class="form-control" placeholder="credit history" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="purpose" class="sr-only">Purpose</label>
+        <input type="text" id="purpose" name="purpose" class="form-control" placeholder="purpose" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="amount" class="sr-only">Amount</label>
+        <input type="text" id="amount" name="amount" class="form-control" placeholder="amount" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="savingsAccount" class="sr-only">SavingsAccount</label>
+        <input type="text" id="savingsAccount" name="savingsAccount" class="form-control" placeholder="savings account" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="presentEmploymentSince" class="sr-only">PresentEmploymentSince</label>
+        <input type="text" id="presentEmploymentSince" name="presentEmploymentSince" class="form-control" placeholder="present employment since" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="installmentRate" class="sr-only">InstallmentRate</label>
+        <input type="text" id="installmentRate" name="installmentRate" class="form-control" placeholder="installment rate" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="personalStatusAndSex" class="sr-only">PersonalStatusAndSex</label>
+        <input type="text" id="personalStatusAndSex" name="personalStatusAndSex" class="form-control" placeholder="personal status and sex" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="otherDebtorsAndGuarantors" class="sr-only">OtherDebtorsAndGuarantors</label>
+        <input type="text" id="otherDebtorsAndGuarantors" name="otherDebtorsAndGuarantors" class="form-control" placeholder="other debtors and guarantors" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="presentResidenceSince" class="sr-only">PresentResidenceSince</label>
+        <input type="text" id="presentResidenceSince" name="presentResidenceSince" class="form-control" placeholder="present residence since" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="property" class="sr-only">Property</label>
+        <input type="text" id="property" name="property" class="form-control" placeholder="property" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="age" class="sr-only">Age</label>
+        <input type="text" id="age" name="age" class="form-control" placeholder="age" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="otherInstallmentPlans" class="sr-only">OtherInstallmentPlans</label>
+        <input type="text" id="otherInstallmentPlans" name="otherInstallmentPlans" class="form-control" placeholder="other installment plans" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="housing" class="sr-only">Housing</label>
+        <input type="text" id="housing" name="housing" class="form-control" placeholder="housing" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="numberOfExistingCredits" class="sr-only">NumberOfExistingCredits</label>
+        <input type="text" id="numberOfExistingCredits" name="numberOfExistingCredits" class="form-control" placeholder="number of existing credits" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="job" class="sr-only">Job</label>
+        <input type="text" id="job" name="job" class="form-control" placeholder="job" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="numberOfPeopleLiableForMaintenance" class="sr-only">NumberOfPeopleLiableForMaintenance</label>
+        <input type="text" id="numberOfPeopleLiableForMaintenance" name="numberOfPeopleLiableForMaintenance" class="form-control" placeholder="number of people liable for maintenance" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="telephone" class="sr-only">Telephone</label>
+        <input type="text" id="telephone" name="telephone" class="form-control" placeholder="telephone" required=""
+               autofocus="">
+      </p>
+      <p>
+        <label for="isForeignWorker" class="sr-only">IsForeignWorker</label>
+        <input type="text" id="isForeignWorker" name="isForeignWorker" class="form-control" placeholder="isForeignWorker" required=""
+               autofocus="">
+      </p>
+
+      <div th:text="${param.error}" class="text-danger"></div>
+
+      <button id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+    </form>
+  </div>
+</body>

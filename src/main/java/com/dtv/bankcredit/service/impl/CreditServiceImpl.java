@@ -10,8 +10,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import java.lang.reflect.Field;
-
 @Service
 public class CreditServiceImpl implements CreditService {
 
